@@ -26,9 +26,9 @@ button {
 }
 
 .container {
+  padding: 0 15px;
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -73,6 +73,9 @@ button {
 }
 
 /*--------------HEADER---------------*/
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-nav {
   color: #2e2f42;
@@ -141,7 +144,6 @@ button {
 .header-container {
   display: flex;
   padding: 24px 0;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -235,10 +237,13 @@ button {
 
 .policies-ul {
   display: flex;
-  width: calc((100% - 3 * 24px) / 4);
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 24px;
+}
+
+.policies-item {
+  width: calc((100% - 72px) / 4);
 }
 
 /*--------------TEAM---------------*/
@@ -338,6 +343,7 @@ button {
 .portfolio-item-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 /*--------------FOOTER---------------*/
@@ -348,6 +354,7 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -372,5 +379,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 17.5px;
-  padding: 100px 0;
+}
+
+.footer-container a {
+  display: inline-block;
 }
