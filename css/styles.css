@@ -146,6 +146,7 @@ button {
   display: flex;
   align-items: center;
   gap: 76px;
+  padding: 0 15px;
 }
 
 .header-address {
@@ -362,7 +363,6 @@ button {
   line-height: 1.17;
   color: #4d5ae5;
   margin-bottom: 16px;
-  display: inline-block;
 }
 
 .footer-logo-web {
@@ -377,6 +377,6 @@ button {
   gap: 17.5px;
 }
 
-.footer-container.footer-logo {
+.footer-container .footer-logo {
   display: inline-block;
 }
