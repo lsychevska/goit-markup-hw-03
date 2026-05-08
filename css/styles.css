@@ -28,7 +28,7 @@ button {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .visually-hidden {
@@ -146,7 +146,7 @@ button {
   display: flex;
   align-items: center;
   gap: 76px;
-  padding: 0 15px;
+  /*padding: 0 15px;*/
 }
 
 .header-address {
@@ -172,6 +172,7 @@ button {
 }
 
 .hero-content {
+  align-self: center;
 }
 
 .hero-title {
@@ -181,7 +182,6 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: 0 auto;
 }
 
 .hero-button {
@@ -363,6 +363,7 @@ button {
   line-height: 1.17;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo-web {
@@ -375,8 +376,4 @@ button {
   display: flex;
   flex-direction: column;
   gap: 17.5px;
-}
-
-.footer-container .footer-logo {
-  display: inline-block;
 }
