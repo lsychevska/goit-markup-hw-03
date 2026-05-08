@@ -1,34 +1,79 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #434455;
-  background-color: #ffffff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul {
-  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
   text-decoration: none;
 }
 
-h2 {
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 500;
-  font-style: normal;
-}
-
 button {
   cursor: pointer;
 }
 
-address {
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.h2 {
+  font-weight: 700;
+}
+
+.h3 {
+  font-weight: 500;
   font-style: normal;
 }
+
+/*address {
+  font-style: normal;
+}*/
+
+.section {
+  padding: 120px 0;
+}
+
+/*--------------HEADER---------------*/
 
 .header-nav {
   color: #2e2f42;
@@ -53,6 +98,8 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-item-link {
@@ -90,16 +137,42 @@ address {
   color: #404bbf;
 }
 
+.header-container {
+  display: flex;
+  padding: 24px 0;
+  border-bottom: 1px solid inherit;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
 .header-address {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: auto;
 }
+
+.header-list-address {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/*--------------HERO---------------*/
 
 .hero {
   text-align: center;
   background-color: #2e2f42;
+}
+
+.hero-content {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -108,6 +181,8 @@ address {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -117,6 +192,7 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-top: 48px;
 }
 
 .hero-button:hover {
@@ -131,6 +207,8 @@ address {
   background-color: #404bbf;
 }
 
+/*--------------POLICIES---------------*/
+
 .policies {
   font-size: 16px;
   line-height: 1.5;
@@ -143,11 +221,22 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .item-text {
   font-size: 16px;
 }
+
+.policies-ul {
+  display: flex;
+  width: ((100% - 24px * 3) / 4);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+/*--------------TEAM---------------*/
 
 .team {
   font-size: 16px;
@@ -164,6 +253,7 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-item {
@@ -175,7 +265,28 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 3px;
 }
+
+.team-img {
+  border-radius: 0 0 4px 4px;
+}
+
+.team-container {
+  padding: 120px 0;
+}
+
+.team-ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.team-item-info {
+  padding: 32px 16px;
+}
+
+/*--------------PORTFOLIO---------------*/
 
 .portfolio {
   font-size: 16px;
@@ -191,6 +302,7 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-item-title {
@@ -198,7 +310,25 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
+
+.portfolio-container {
+  padding: 120px 0;
+}
+
+.portfolio-ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item-info {
+  padding: 32px 16px;
+}
+
+/*--------------FOOTER---------------*/
 
 .footer {
   font-size: 16px;
@@ -216,8 +346,19 @@ address {
   text-transform: uppercase;
   line-height: 1.17;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .footer-logo-web {
   color: #f4f4fd;
+}
+
+.footer-container {
+  padding: 100px 0;
+  max-width: 264px;
+  /*margin-left: 156px;*/
+  display: flex;
+  flex-direction: column;
+  gap: 17.5px;
+  /*padding-left: 15px;*/
 }
