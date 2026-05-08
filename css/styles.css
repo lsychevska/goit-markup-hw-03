@@ -26,9 +26,9 @@ button {
 }
 
 .container {
-  padding: 0 15px;
   max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
 }
 
 .visually-hidden {
@@ -55,18 +55,14 @@ button {
   list-style-type: none;
 }
 
-.title-h2 {
+.title-two {
   font-weight: 700;
 }
 
-.title-h3 {
+.title-three {
   font-weight: 500;
   font-style: normal;
 }
-
-/*address {
-  font-style: normal;
-}*/
 
 .section {
   padding: 120px 0;
@@ -381,6 +377,6 @@ button {
   gap: 17.5px;
 }
 
-.footer-container a {
+.footer-container.footer-logo {
   display: inline-block;
 }
