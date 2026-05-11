@@ -366,12 +366,8 @@ button {
   text-transform: uppercase;
   line-height: 1.17;
   color: #4d5ae5;
+  display: inline-block;
   margin-bottom: 16px;
-  display: inline-block;
-}
-
-.footer-logo {
-  display: inline-block;
 }
 
 .footer-logo-web {
