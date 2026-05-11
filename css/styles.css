@@ -372,6 +372,7 @@ button {
 
 .footer-logo-web {
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-container {
