@@ -370,7 +370,8 @@ button {
   display: inline-block;
 }
 
-.footer-container a {
+.footer-logo,
+.footer-logo-web {
   display: inline-block;
 }
 
