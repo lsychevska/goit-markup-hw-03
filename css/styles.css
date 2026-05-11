@@ -380,5 +380,6 @@ button {
   max-width: 264px;
   display: flex;
   flex-direction: column;
+  display: inline-block;
   gap: 17.5px;
 }
